@@ -1,0 +1,116 @@
+/* ----RESET------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: none;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: CENTER;
+  background-size: cover;
+
+  border: #333 solid 1px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  border: 1px solid;
+}
+
+
+.intro{
+  justify-content: center;
+  align-items: center;
+border: #004ecc solid;
+}
+
+.visual{
+  justify-content: center;
+  align-items: center;
+}
+
+
+a {
+  text-decoration: none;
+  background: #0066ff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: #004ecc;
+}
+
+
+
+.place-fig {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.place-fig:hover {
+  transform: translateY(-8px);
+}
+
+.place-fig img {
+  width: 100%;
+  display: block;
+}
+
+.itineraries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+
+
+
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+  body {
+    background-attachment: scroll;
+  }
+
+  .itineraries {
+    grid-template-columns: 1fr;
+  }
+}
